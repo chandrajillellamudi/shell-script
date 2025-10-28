@@ -9,7 +9,7 @@ echo "The sum of $A and $B is: $SUM"
 Num1=$a
 Num2=$b
 Addition=$((Num1 + Num2))
-echo "The addition of $Num1 and $Num2 is: $Addition"
+echo "The addition of $a and $b is: $Addition"
 
 #Command Substitution
 CURRENT_DATE=$(date)
