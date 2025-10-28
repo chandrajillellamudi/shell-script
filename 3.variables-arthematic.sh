@@ -5,6 +5,12 @@ B=2
 SUM=$((A + B))
 echo "The sum of $A and $B is: $SUM"
 
+#Addition by passing Arguments
+Num1=$a
+Num2=$b
+Addition=$((Num1 + Num2))
+echo "The addition of $Num1 and $Num2 is: $Addition"
+
 #Command Substitution
 CURRENT_DATE=$(date)
 echo "Today's date is: $CURRENT_DATE"
