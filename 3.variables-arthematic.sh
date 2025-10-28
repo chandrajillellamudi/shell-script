@@ -8,7 +8,7 @@ echo "The sum of $A and $B is: $SUM"
 #Addition by passing Arguments
 Num1=$1
 Num2=$2
-Addition=$((Num1 + Num2))
+Addition=$(($Num1 + $Num2))
 echo "The addition of $NUM1 and $NUM2 is: $Addition"
 
 #Command Substitution
