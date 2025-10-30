@@ -23,3 +23,9 @@ if [ $NUM -gt 0 ]; then
 else
   echo "$NUM is not a positive number."
 fi
+
+Array=(RRR Devara Salar)
+echo "First Movie Is: ${Array[0]}"
+echo "Second Movie Is: ${Array[1]}"
+echo "Third Movie Is: ${Array[2]}"
+echo "Movies In The Arry Are: ${Array[@]}"
