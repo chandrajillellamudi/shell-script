@@ -7,3 +7,5 @@ else
   echo "You are not a root user"
 fi
 dnf install mysql -y
+
+echo "MySQL installation completed."
