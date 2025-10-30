@@ -8,10 +8,18 @@ else
   echo "Running as root user"       
 fi
 dnf install mysql -y
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
+  echo "Installation failed"
+  exit 1
+  else
   echo "MySQL installed successfully"
-else
-  echo "MySQL installation failed"
+fi
+dnf install gcc -y
+if [ $? -ne 0 ]; then
+  echo "Installation failed"
+  exit 1
+    else
+  echo "GCC installed successfully"
 fi
 
 echo "exit status: $?"
