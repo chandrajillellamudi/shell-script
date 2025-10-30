@@ -1,12 +1,10 @@
 #!/bin/bash
 #Conditionals in Bash
-UDERID=$(id -u)
-if [ $UDERID -eq 0 ]; then
-  echo "You are a root user"
-  exit -1
-else
-  echo "You are not a root user"
-fi
+USERID=$(id -u)
+if [ $USERID -ne 0 ]; then
+    echo "You must run this script as root user."
+    exit 1
+    fi
 dnf install mysql -y
 
 echo "MySQL installation completed."
