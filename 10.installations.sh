@@ -7,7 +7,7 @@ if [ $ID -ne 0 ]; then
 else
   echo "Running as root user"       
 fi
-dnf install mysql -y
+dnf install mysqll -y
 if [ $? -eq 0 ]; then
   echo "MySQL installed successfully"
 else
