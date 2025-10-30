@@ -1,12 +1,12 @@
 #!/bin/bash
-#Conditionals in Bash
-USERID=$(id -u)
-if [ $USERID -ne 0 ]; then
-    echo "You must run this script as root user."
-    exit 1
-    else
-    echo "Running as root user."
-    fi
-dnf install mysql -y
-
-echo "MySQL installation completed."
+#Conditions in Bash
+var=$1
+if [$var -gt 1]
+then
+echo "The variable is positive number"
+elif [$var -lt 1]
+then
+echo "The variable is negative number"
+else
+echo "The variable is zero"
+fi
