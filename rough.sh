@@ -17,3 +17,9 @@ echo "The quotient of $A and $B is $DIV"
 
 List=$(ls)
 echo "The contents of the current directory are: $List"
+NUM=$1
+if [ $NUM -gt 0 ]; then
+  echo "$NUM is a positive number."
+else
+  echo "$NUM is not a positive number."
+fi
