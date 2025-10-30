@@ -1,6 +1,7 @@
 #!/bin/bash
 #Conditions in Bash
 var=$1
+
 if [$var -gt 1]
 then
 echo "The variable is positive number"
