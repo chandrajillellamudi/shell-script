@@ -13,3 +13,7 @@ MUL=$((A * B))
 echo "The product of $A and $B is $MUL"
 DIV=$((A / B))
 echo "The quotient of $A and $B is $DIV"
+
+
+List=$(ls)
+echo "The contents of the current directory are: $List"
