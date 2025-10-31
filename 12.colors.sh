@@ -1,10 +1,10 @@
 #!/bin/bash
 # Color codes for terminal output
 USERID=$(id -u)
-RED=\e[31m
-GREEN=\e[32m
-YELLOW=\e[33m
-NO=\e[0m
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+NO="\e[0m"
 if [ $USERID -ne 0 ]; then
     echo -e "${RED}Please run as root user${NO}"
     exit 1
