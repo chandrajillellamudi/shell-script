@@ -30,10 +30,10 @@ divide() {
 }
 
 # Main script
-echo "Enter two numbers:"
-read num1 num2
+#echo "Enter two numbers:"
+#read num1 num2
 
-add $num1 $num2
-subtract $num1 $num2
-multiply $num1 $num2
-divide $num1 $num2
+add $1 $2
+subtract $1 $2
+multiply $1 $2
+divide $1 $2
