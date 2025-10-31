@@ -7,19 +7,18 @@ if [ $ID -ne 0 ]; then
 else
   echo "Running as root user"       
 fi
-dnf install mysql -y
-if [ $? -ne 0 ]; then
-  echo "Installation failed"
-  exit 1
+validate(){
+  if [$1 -ne 0 ]; then
+    echo "$2.. failed"
+    exit 1
   else
-  echo "MySQL installed successfully"
-fi
-dnf install gcc -y
-if [ $? -ne 0 ]; then
-  echo "Installation failed"
-  exit 1
-    else
-  echo "GCC installed successfully"
-fi
+    echo "$2.. successful"
+  fi
+}
 
+dnf install mysql -y
+validate $? "MySQL installation"
+dnf install gcc -y
+
+validate $? "GCC installation"
 echo "exit status: $?"
