@@ -20,6 +20,5 @@ if [ $? -eq 0 ]; then
   echo -e "${G}$i is already installed${N}, ${Y}skipping...${N}"
 else
   echo -e "$i is not installed,${R} need to install${N}"
-  exit 1
 fi
 done
