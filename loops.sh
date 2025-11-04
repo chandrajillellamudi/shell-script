@@ -1,11 +1,13 @@
 #!/bin/bash
 #Installation of multiple packages using a loop
-for i in ${packages[@]}
+for i in $@
 do
-    dnf install $i -y
-    if [ $? -eq 0 ]; then
+echo "package name: $i"
+    if [ $? -eq 0 ];
+     then
         echo "$i already installed.. skipping"
         else
+        dnf install $i -y
         echo "Installation of $i successful"
     fi
 done
