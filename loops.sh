@@ -3,7 +3,7 @@
 for i in $@
 do
 echo "package name: $i"
-dnf list install $i -y
+dnf install $i -y
     if [ $? -ne 0 ];
      then
         echo -e"$i already installed.. "\e[33m"skipping"\e[0m"
