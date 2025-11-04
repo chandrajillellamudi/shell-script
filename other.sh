@@ -1,5 +1,5 @@
 #!/bin/bash
 
 NAME="Chowdary"
-echo "Inside other.sh, $NAME"
-echo "process instance id in other.sh: $$"
+echo "Variable value in other script Name:, $NAME"
+echo "process instance id in other script: $$"
