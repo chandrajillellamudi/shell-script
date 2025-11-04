@@ -1,6 +1,5 @@
 #!/bin/bash
 
-NAME="Chowdary"
-
-echo "Variable value in other script Name: $NAME"
-echo "process instance of other script: $$"
+Name="Chowdary"
+echo "Value of Name in other script: $Name"
+echo "Process id of other script is: $$"
