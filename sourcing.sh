@@ -7,6 +7,6 @@ echo "Before calling other script, $NAME"
 echo "process instance id before sourcing: $$"
 
 
-./other.sh
+source ./other.sh
 echo "after sourcing:$NAME"
 echo "process instance id after sourcing: $$"
