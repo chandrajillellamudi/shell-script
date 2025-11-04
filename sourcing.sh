@@ -3,10 +3,10 @@
 # Sourcing another script example
 
 NAME="Chandra"
-echo "Hello, $NAME"
-echo before sourcing
+echo "Before calling other script, $NAME"
+echo "process instance id before sourcing: $$"
+
 
 ./other.sh
-exit 1
-echo after sourcing
-echo "Hello, $NAME"
+echo "after sourcing:$NAME"
+echo "process instance id after sourcing: $$"
