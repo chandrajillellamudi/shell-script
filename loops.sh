@@ -3,12 +3,12 @@
 for i in $@
 do
 echo "package name: $i"
-dnf list install $i
-    if [ $? -eq 0 ];
+dnf list install $i -y
+    if [ $? -ne 0 ];
      then
-        echo "$i already installed.. skipping"
+        echo -e"$i already installed.. "\e[33m"skipping"\e[0m"
         else
-        dnf install $i -y
-        echo "Installation of $i successful"
+
+        echo -e"$i installed "\e[32m"successful"\e[0m"
     fi
 done
