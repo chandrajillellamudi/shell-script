@@ -6,6 +6,6 @@ NAME="Chandra"
 echo "Before calling other script,Name: $NAME"
 echo "process instance id of current script: $$"
 
+ ./other.sh
 
-./other.sh
 echo "after calling other script,Name: $NAME"
