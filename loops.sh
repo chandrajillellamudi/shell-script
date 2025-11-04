@@ -3,6 +3,7 @@
 for i in $@
 do
 echo "package name: $i"
+dnf list installed $i
     if [ $? -eq 0 ];
      then
         echo "$i already installed.. skipping"
