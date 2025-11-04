@@ -7,5 +7,6 @@ echo "Hello, $NAME"
 echo before sourcing
 
 ./other.sh
+exit 1
 echo after sourcing
 echo "Hello, $NAME"
